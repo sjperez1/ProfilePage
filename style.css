@@ -1,19 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav {
     background-color: rgb(40, 31, 31);
-    padding-left: 20px;
+}
+.navcenter {
+    width: 1050px;
+    height: 75px;
+    margin: 0 auto;
     /* Display: flex here will get the children h1 and ul next to each other. */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.navleft {
+    display: flex;
+}
 .nav-title {
     color: white;
-    /* Without the margin: 0px, there is a large margin on the left. */
     margin-left: 10px;
+    margin-right: 15px;
 }
 .nav-links {
     /* Display: flex here will get the children of ul, which are the 4 li, to be next to each other. */
@@ -21,15 +29,23 @@
     /* Align items in the center of the area containing the ul. Can see that they are not centered by adding a tempory background color. */
     align-items: center;
     /* Need to add width to the are containing the ul to allow the links to spread out enough. */
-    width: 1000px;
     list-style-type: none;
     margin: 0px;
     color: white;
     text-align: center;
+    font-size: larger;
 }
+li {
+    margin: 10px;
+}
+a {
+    opacity: .8;
+}
+/* If other links are in the code, have to be more specific than a if I don't want this property on all of the links. */
 a:hover {
     /* This will make the link red when hovering over it. */
-    color: red;
+    opacity: 1;
+    cursor: pointer;
 }
 /* Can just use a here because we specifically want to make the links white. */
 a {
@@ -38,7 +54,7 @@ a {
     text-decoration: none;
 }
 /* Format should be to put class first and then tags. */
-.nav-links li button {
+.btn {
     background-color: rgb(16, 121, 101);
     color: white;
     border-color: black;
@@ -46,25 +62,25 @@ a {
     box-shadow: 3px 3px 0px black;
     font-size: larger;
     width: 100px;
+    margin-right: 10px;
 }
 .colcontainer {
     width: 1050px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 20px;
 }
 .column {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: green;
 }
 .columnleft {
-    background-color: rgb(201, 67, 67);
     flex: 2;
     height: 800px;
 }
 .container {
     width: 700px;
-    height: 300px;
+    height: 320px;
     border-style: solid;
     border-color: gray;
     /* Doing this centers the container in the page because there was a large default margin pushing it left. */
@@ -87,13 +103,14 @@ a {
 .text {
     padding-left: 20px;
 }
-h1 {
+.sarah {
     margin-bottom: 10px;
     margin-top: 60px;
 }
 .location {
     display: flex;
     width: 150px;
+    align-items: center;
     margin-bottom: 10px;
 }
 .location img {
@@ -105,7 +122,7 @@ h1 {
 }
 .edit {
     display: flex;
-    width: 100px;
+    width: 150px;
     padding-top: 10px;
     text-decoration: underline;
     color: rgb(44, 44, 200);
@@ -114,8 +131,10 @@ h1 {
     height: 20px;
     margin-right: 5px;
 }
+.edit p {
+    cursor: pointer;
+}
 .education {
-    background-color: blueviolet;
     margin-top: 20px;
 }
 .edubar {
@@ -134,14 +153,12 @@ h1 {
     margin-bottom: 5px;
 }
 .columnright {
-    background-color: rgb(71, 71, 202);
     flex: 1;
     height: 800px;
     margin-left: 20px;
 }
 .connectionrequests {
     margin-bottom: 20px;
-    background-color: aquamarine;
 }
 .conbar {
     display: flex;
@@ -157,6 +174,7 @@ h1 {
     width: 40px;
     background-color: lightgray;
     margin-right: 5px;
+    font-size: large;
 }
 .context {
     padding: 10px;
@@ -168,6 +186,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 .toddleft {
     display: flex;
@@ -194,10 +213,6 @@ h1 {
 .philleft img {
     margin-right: 5px;
 }
-.yourconnections {
-    background-color: pink;
-    
-}
 .yourconnections img {
     height: 50px;
     border-radius: 50%;
@@ -216,22 +231,16 @@ h1 {
     width: 60px;
     background-color: lightgray;
     margin-right: 5px;
+    font-size: large;
 }
-.adrien {
+/* call all same class name and then apply the same to all */
+.profilepicture {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
-.anne {
-    display: flex;
-    align-items: center;
-}
-.alayne {
-    display: flex;
-    align-items: center;
-}
-.arry {
-    display: flex;
-    align-items: center;
+#adrienprofilepicture {
+    margin-top: 5px;
 }
 .yourtext {
     padding: 10px;
@@ -245,8 +254,14 @@ h1 {
 }
 .yourview {
     text-decoration: underline;
-    color: blue;
     padding: 10px;
     border-style: solid;
     border-color: gray;
+}
+.yourview a {
+    color: blue;
+    font-size: larger;
+}
+.yourview a:hover {
+    cursor: pointer;
 }
