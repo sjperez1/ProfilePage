@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    background-color: rgb(40, 31, 31);
+    padding-left: 20px;
+    /* Display: flex here will get the children h1 and ul next to each other. */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title {
+    color: white;
+    /* Without the margin: 0px, there is a large margin on the left. */
+    margin-left: 10px;
+}
+.nav-links {
+    /* Display: flex here will get the children of ul, which are the 4 li, to be next to each other. */
+    display: flex;
+    /* Align items in the center of the area containing the ul. Can see that they are not centered by adding a tempory background color. */
+    align-items: center;
+    /* Need to add width to the are containing the ul to allow the links to spread out enough. */
+    width: 1000px;
+    list-style-type: none;
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+a:hover {
+    /* This will make the link red when hovering over it. */
+    color: red;
+}
+/* Can just use a here because we specifically want to make the links white. */
+a {
+    color: white;
+    /* Need to remove text decoration from links if you want to change what they look like because they will automatically be blue and have an underline. */
+    text-decoration: none;
+}
+/* Format should be to put class first and then tags. */
+.nav-links li button {
+    background-color: rgb(16, 121, 101);
+    color: white;
+    border-color: black;
+    border-width: 5px;
+    box-shadow: 3px 3px 0px black;
+    font-size: larger;
+    width: 100px;
+}
+.colcontainer {
+    width: 1050px;
+    margin: 0 auto;
+}
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+.columnleft {
+    background-color: rgb(201, 67, 67);
+    flex: 2;
+    height: 800px;
+}
+.container {
+    width: 700px;
+    height: 300px;
+    border-style: solid;
+    border-color: gray;
+    /* Doing this centers the container in the page because there was a large default margin pushing it left. */
+    margin: 0 auto;
+
+}
+.top {
+    background-color: rgb(48, 158, 221);
+    height: 25%;
+}
+.profile img {
+    position: relative;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: gray;
+}
+.text {
+    padding-left: 20px;
+}
+h1 {
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.location {
+    display: flex;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.location img {
+    height: 20px;
+    margin-right: 5px;
+}
+.description {
+    font-weight: 550;
+}
+.edit {
+    display: flex;
+    width: 100px;
+    padding-top: 10px;
+    text-decoration: underline;
+    color: rgb(44, 44, 200);
+}
+.edit img {
+    height: 20px;
+    margin-right: 5px;
+}
+.education {
+    background-color: blueviolet;
+    margin-top: 20px;
+}
+.edubar {
+    background-color: black;
+    color: white;
+    padding: 18px;
+}
+.edutext {
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-top: none;
+}
+.edutext p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.columnright {
+    background-color: rgb(71, 71, 202);
+    flex: 1;
+    height: 800px;
+    margin-left: 20px;
+}
+.connectionrequests {
+    margin-bottom: 20px;
+    background-color: aquamarine;
+}
+.conbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(73, 62, 62);
+    color: white;
+}
+.conbar button {
+    border-radius: 50%;
+    border-color: black;
+    height: 40px;
+    width: 40px;
+    background-color: lightgray;
+    margin-right: 5px;
+}
+.context {
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-top: none;
+}
+.todd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toddleft {
+    display: flex;
+    align-items: center;
+}
+.todd img {
+    height: 50px;
+}
+.toddleft img {
+    margin-right: 5px;
+}
+.phil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.philleft {
+    display: flex;
+    align-items: center;
+}
+.phil img {
+    height: 50px;
+}
+.philleft img {
+    margin-right: 5px;
+}
+.yourconnections {
+    background-color: pink;
+    
+}
+.yourconnections img {
+    height: 50px;
+    border-radius: 50%;
+}
+.yourbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(73, 62, 62);
+    color: white;
+}
+.yourbar button {
+    border-radius: 50%;
+    border-color: black;
+    height: 40px;
+    width: 60px;
+    background-color: lightgray;
+    margin-right: 5px;
+}
+.adrien {
+    display: flex;
+    align-items: center;
+}
+.anne {
+    display: flex;
+    align-items: center;
+}
+.alayne {
+    display: flex;
+    align-items: center;
+}
+.arry {
+    display: flex;
+    align-items: center;
+}
+.yourtext {
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-top: none;
+    border-bottom: none;
+}
+.yourtext img {
+    margin-right: 5px;
+}
+.yourview {
+    text-decoration: underline;
+    color: blue;
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+}
